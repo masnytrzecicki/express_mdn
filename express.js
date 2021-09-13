@@ -26,18 +26,11 @@ module.exports = {
         return 4 * width;
     }
 };
-console.log('First');
-console.log('Second');
-console.log('nigga balls');
-
-setTimeout(function() {
-    console.log('balls in ya');
-}, 3);
-setTimeout(function () {
-    console.log('jaws');
-}, 3);
-
+const wiki = require('./wiki.js');
+// ...
+app.use('/wiki', wiki);
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}!`)
 });
+
